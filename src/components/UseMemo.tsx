@@ -17,7 +17,9 @@ const UseMemo = () => {
     setResult(avgMemo||null)
   }, [avgMemo])
 
+  
   return (
+    <>
     <div className='text-center flex flex-col justify-center items-center h-screen'>
       <div>Find Average</div>
       <input
@@ -32,9 +34,11 @@ const UseMemo = () => {
       >
         Submit
       </button>
-      <p className='mt-4 text-xl'>Find avg using useMemo()</p>
+      <p className='mt-4 text-xl'>Find avg using useMemo() & forwardRef()</p>
       <p className='mt-4 text-xl'>Result: {result}</p>
+
     </div>
+    </>
   )
 }
 
